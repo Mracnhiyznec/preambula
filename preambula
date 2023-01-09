@@ -9,6 +9,7 @@
 #include <unordered_set>
 #include <unordered_map>
 #include <queue>
+#include <iomanip>
 #include <ctime>
 #include <cassert>
 #include <complex>
@@ -22,7 +23,11 @@
 #include <functional>
 #include <stack>
 #include <memory>
+const double EPS = 1e-14;
 #define debug(x) std::cerr << __FUNCTION__ << ":" << __LINE__ << " " << #x << " = " << x << '\n';
+bool isEqual(double a, double b){
+    return std:: abs(a - b) <= std:: max(1.0, std::abs(a)+std::abs(b)) *EPS;
+}
 using ll = long long;
 using ull = unsigned long long;
 using pii = std::pair<int, int>;
@@ -30,7 +35,7 @@ using pll = std::pair<ll, ll>;
 using namespace std;
 int main(){
     ll x;
-    x = 5;
-    debug(x);
+    cout << fixed << setprecision(0);
+    cout << 1.0 / 49 * 49;
     return 0;
 }
