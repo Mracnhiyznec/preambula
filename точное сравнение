@@ -1,0 +1,4 @@
+очень точное сравнение двух вещественных чисел
+bool isEqual(double a, double b){
+    return std:: abs(a - b) <= std:: max(1.0, std::abs(a)+std::abs(b)) *EPS;
+}
